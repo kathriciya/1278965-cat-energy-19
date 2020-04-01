@@ -13,14 +13,14 @@
       <img class="page-header__logo-img" src="#" width="191" height="39" alt="Логотип с названием Кэт энерджи">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Каталог продукции</a>
+            <a>Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a href="form.html">Подбор программы</a>
@@ -31,13 +31,13 @@
   </header>
 
   <!-- Основное -->
-<main class="page-catalog">
-  <section class="catalog">
-    <h2 class="catalog__title title">Каталог продукции</h2>
-    <ul class="catalog__list">
-      <!-- Товар №1 -->
+  <main class="page-catalog">
+    <section class="catalog">
+      <h2 class="catalog__title title">Каталог продукции</h2>
+      <ul class="catalog__list">
+        <!-- Товар №1 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy PRO 500 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy PRO 500 г">
           <h3 class="catalog__product">Cat Energy PRO 500 г</h3>
           <table class="catalog__info">
             <tr>
@@ -53,10 +53,11 @@
               <td class="catlog__value">700 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №2 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy PRO 1000 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy PRO 1000 г">
           <h3 class="catalog__product">Cat Energy PRO 1000 г</h3>
           <table class="catalog__info">
             <tr>
@@ -72,10 +73,11 @@
               <td class="catlog__value">1000 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №3 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy PRO 500 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy PRO 500 г">
           <h3 class="catalog__product">Cat Energy PRO 500 г</h3>
           <table class="catalog__info">
             <tr>
@@ -91,10 +93,11 @@
               <td class="catlog__value">700 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №4 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy PRO 1000 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy PRO 1000 г">
           <h3 class="catalog__product">Cat Energy PRO 1000 г</h3>
           <table class="catalog__info">
             <tr>
@@ -110,10 +113,11 @@
               <td class="catlog__value">1000 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №5 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy SLIM 500 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy SLIM 500 г">
           <h3 class="catalog__product">Cat Energy SLIM 500 г</h3>
           <table class="catalog__info">
             <tr>
@@ -129,10 +133,11 @@
               <td class="catlog__value">400 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №6 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy SLIM 1000 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy SLIM 1000 г">
           <h3 class="catalog__product">Cat Energy SLIM 1000 г</h3>
           <table class="catalog__info">
             <tr>
@@ -148,10 +153,11 @@
               <td class="catlog__value">700 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- Товар №7 -->
         <li class="catalog__item">
-          <img class="catalog__img" src="#" width="140"  height="144" alt="Cat Energy SLIM 500 г">
+          <img class="catalog__img" src="#" width="140" height="144" alt="Cat Energy SLIM 500 г">
           <h3 class="catalog__product">Cat Energy SLIM 500 г</h3>
           <table class="catalog__info">
             <tr>
@@ -167,26 +173,79 @@
               <td class="catlog__value">500 р.</td>
             </tr>
           </table>
+          <a class="catalog__button" href="product.html">Заказать</a>
         </li>
         <!-- 100500 товаров -->
         <li class="catalog__item">
           <!-- svg -->
           <h3 class="catalog__product">Показать еще 100500 товаров</h3>
           <p class="catalog__paragraph">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog__button" type="button">Показать все</button>
+          <a class="catalog__button catalog__button--show-all" href="product-all.html">Показать все</a>
         </li>
-    </ul>
-  </section>
-
-</main>
+      </ul>
+    </section>
+    <section class="others-products">
+      <h2 class="others-products__title title">Дополнительные товары</h2>
+      <ul class="others-products__list">
+        <li class="others-products__item">
+          <h3 class="others__product">Сахарозаменитель</h3>
+          <table class="others__product__info">
+            <tr>
+              <td class="others__product__field">1 упаковка (100 г)</td>
+              <td class="others__product__value">100 p.</td>
+            </tr>
+            <a class="others__product_button" href="product.html">Заказать</a>
+        </li>
+        <li class="others-products__item">
+          <h3 class="others__product">Питьевая вода</h3>
+          <table class="others__product__info">
+            <tr>
+              <td class="others__product__field">5 литров</td>
+              <td class="others__product__value">50 p.</td>
+            </tr>
+            <a class="others__product_button" href="product.html">Заказать</a>
+        </li>
+        <li class="others-products__item">
+          <h3 class="others__product">Молоко</h3>
+          <table class="others__product__info">
+            <tr>
+              <td class="others__product__field">1 литр</td>
+              <td class="others__product__value">100 p.</td>
+            </tr>
+            <a class="others__product_button" href="product.html">Заказать</a>
+        </li>
+        <li class="others-products__item">
+          <h3 class="others__product">Витамины</h3>
+          <table class="others__product__info">
+            <tr>
+              <td class="others__product__field">1 упаковка (30 г)</td>
+              <td class="others__product__value">300 p.</td>
+            </tr>
+            <a class="others__product_button" href="product.html">Заказать</a>
+        </li>
+      </ul>
+    </section>
+    <aside class="present">
+      <p class="present__paragraph">Закажите все и получите чехол для кота в подарок!</p>
+    </aside>
+  </main>
 
   <!-- Подвал сайта -->
   <footer class="page-footer">
     <div class="page-footer__wrapper">
 
       <div class="page-footer__contacts contacts">
-        <img class="contacts__img" src="#" width="128" height="24" alt="Кэт энерджи">
+        <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+
+      <div class="page-footer__map map">
+        <img class="map__img" src="#" alt="ул.Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+
+      <a class="page-footer__logo" href="index.html">
+        <img src="#" width="128" height="24" alt="Логотип Кэт энерджи">
+      </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -211,7 +270,9 @@
 
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">HTML Academy</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"></a>
+        <a class="copyright__link logo-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <!-- svg -->
+        </a>
       </div>
     </div>
   </footer>
