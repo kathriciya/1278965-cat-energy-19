@@ -1,0 +1,43 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+
+  &:active {
+    color: $color-down-two;
+  }
+}
+
+.copyright__lolo-htmlacademy {
+  width: 27px;
+  height: 34px;
+
+  &:hover,
+  &:focus {
+    fill: $color-green;
+  }
+
+  &:active {
+    fill: $color-green;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__text {
+    text-align: right;
+    margin-right: 23px;
+  }
+}
