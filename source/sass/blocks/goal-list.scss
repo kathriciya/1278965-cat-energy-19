@@ -1,0 +1,74 @@
+.goal-list {
+  @include no-list;
+}
+
+.goal-list__item {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $color-black-two;
+  text-transform: uppercase;
+  text-align: left;
+
+  &:first-child::before {
+    content: " ";
+    position: absolute;
+    left: -20px;
+    top: -11px;
+    width: 320px;
+    height: 1px;
+    background-color: $color-grey-hr;
+  }
+
+  &:first-child::after {
+    content: " ";
+    position: absolute;
+    left: -20px;
+    top: 150px;
+    width: 320px;
+    height: 1px;
+    background-color: $color-grey-hr;
+  }
+}
+
+.goal-list__item label {
+  position: relative;
+  padding-left: 42px;
+}
+
+.goal-list__item input + label::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: calc(50% - (28px / 2));
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-grey-hvr;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.goal-list__item input + label::after {
+  content: " ";
+  position: absolute;
+  left: 9px;
+  top: calc(50% - (9px / 2));
+  width: 12px;
+  height: 12px;
+  background-color: $color-green;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.goal-list__item input:checked + label::after {
+  opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .goal-list__item {
+    @include no-outline;
+  }
+}
