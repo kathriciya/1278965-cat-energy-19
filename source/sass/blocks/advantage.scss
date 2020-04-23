@@ -1,0 +1,102 @@
+.advantage__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  text-align: left;
+  color: $color-black;
+}
+
+.advantage__list {
+  @include no-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.advantage__item {
+  position: relative;
+  display: flex;
+  padding-left: 80px;
+  padding-bottom: 32px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-size: 39px auto;
+    background-position: center;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__title {
+    font-size: 60px;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    counter-reset: list 0;
+  }
+
+  .advantage__item {
+    width: 245px;
+    min-height: 63px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    margin-bottom: 60px;
+    margin-right: 81px;
+    counter-increment: list;
+
+    &::before {
+      top: 40px;
+    }
+
+    &::after {
+      content: counter(list) " ";
+      position: absolute;
+      width: 114px;
+      height: 230px;
+      font-family: "Oswald", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      color: $color-grey-light;
+      z-index: -1;
+      left: 118px;
+      top: 0;
+    }
+  }
+}
