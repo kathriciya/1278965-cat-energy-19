@@ -94,7 +94,6 @@
 @media (min-width: $tablet-width) {
   .programms__article {
     padding-top: 81px;
-    padding-right: 62px;
     padding-bottom: 62px;
     padding-left: 52px;
   }
@@ -111,14 +110,10 @@
     margin-bottom: 26px;
 
     &::before {
-      content: " ";
-      position: absolute;
       top: 10px;
       left: 390px;
       width: 200px;
       height: 200px;
-      border-radius: 50%;
-      background-color: $color-green;
     }
 
     &--slim::after {
@@ -165,3 +160,51 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .programms__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__article {
+    width: 570px;
+    margin: 0;
+    margin-bottom: 79px;
+  }
+
+  .programms__title {
+    padding-left: 165px;
+    margin: 0;
+    margin-bottom: 75px;
+
+    &::before {
+      top: -25px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: -28px;
+      left: 13px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: -1px;
+      left: -18px;
+      width: 134px;
+      height: 57px;
+    }
+  }
+
+  .programms__paragraph {
+    width: 462px;
+    margin-bottom: 61px;
+
+    &--pro {
+      width: 444px;
+    }
+  }
+}
