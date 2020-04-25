@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 100%;
+    max-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: auto;
@@ -29,7 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 100%;
+    max-width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: auto;

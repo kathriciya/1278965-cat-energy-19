@@ -75,8 +75,12 @@
     padding-bottom: 50px;
     padding-left: 0;
     margin-bottom: 60px;
-    margin-right: 81px;
     counter-increment: list;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 60px;
+    }
+
 
     &::before {
       top: 40px;
@@ -97,6 +101,14 @@
       z-index: -1;
       left: 118px;
       top: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__item {
+    &:not(:nth-child(4n)) {
+      margin-right: 60px;
     }
   }
 }
