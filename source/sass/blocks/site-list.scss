@@ -21,7 +21,7 @@
 
   &--active {
     color: $color-black;
-    border-bottom: 2 px solid $color-green;
+    border-bottom: 2px solid $color-green;
   }
 }
 
@@ -48,5 +48,11 @@
       padding-bottom: 12px;
       border-bottom: 2px solid $color-green;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    font-size: 20px;
   }
 }

@@ -42,3 +42,9 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .choice-of-programme__paragraph {
+    margin-left: 0;
+  }
+}
