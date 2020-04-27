@@ -51,3 +51,12 @@
     margin-left: 424px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .present {
+    background-image: url("../img/gift-photo-desktop@1x.png");
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
+}

@@ -1,17 +1,21 @@
 .goal-list {
   @include no-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .goal-list__item {
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 12px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   color: $color-black-two;
   text-transform: uppercase;
   text-align: left;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
   &:first-child::before {
     content: " ";
