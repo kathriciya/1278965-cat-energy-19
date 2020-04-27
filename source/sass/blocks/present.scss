@@ -54,9 +54,15 @@
 
 @media (min-width: $desktop-width) {
   .present {
-    background-image: url("../img/gift-photo-desktop@1x.png");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
     height: 289px;
     margin: 0;
+  }
+
+  .present__paragraph {
+    text-align: center;
+    margin-top: 121px;
+    margin-left: 42px;
   }
 }
