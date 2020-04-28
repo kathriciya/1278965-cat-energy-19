@@ -45,3 +45,27 @@
     padding-left: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__top {
+    position: relative;
+    padding-top: 94px;
+    padding-bottom: 104px;
+  }
+
+  .page-footer__contacts {
+    display: block;
+    width: 570px;
+    // position: absolute;
+    // z-index: 1;
+    // top: 50%;
+    // transform: translateY(-50%);
+  }
+
+  .page-footer__map {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
