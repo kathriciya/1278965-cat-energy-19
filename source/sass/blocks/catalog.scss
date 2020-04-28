@@ -44,7 +44,7 @@
   font-weight: normal;
   color: $color-black;
 
-  &--more {
+  &--last {
     position: relative;
     padding-top: 45px;
     margin: 15px auto;
@@ -124,6 +124,17 @@
 .catalog__button {
   display: block;
   position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  &--last {
+    color: $color-grey-dark;
+    background-color: $color-grey-light;
+    padding-right: 94px;
+    padding-left: 95px;
+  }
 
   &::after {
     content: " ";
@@ -166,10 +177,13 @@
   }
 
   .catalog__button {
-    padding-top: 13px;
     padding-right: 93px;
-    padding-bottom: 12px;
     padding-left: 95px;
+
+    &--last {
+      padding-right: 79px;
+      padding-left: 81px;
+    }
 
     &::after {
       @include no-outline;
@@ -179,8 +193,13 @@
   .catalog__wrapper {
     background-color: $color-grey-light;
     padding-right: 37px;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
     padding-left: 38px;
+
+    &--last {
+      background-color: yellowgreen;
+      padding-top: 70px;
+    }
   }
 
   .catalog__inner {
@@ -192,6 +211,29 @@
     width: 124px;
     font-size: 20px;
     text-align: center;
+
+    &--last {
+      width: 134px;
+      margin-bottom: 28px;
+
+      &::before {
+        left: calc(50% - (61px / 2));
+        top: -30px;
+        width: 61px;
+        height: 2px;
+        background-color: $color-black-two;
+        opacity: 0.2;
+      }
+
+      &::after {
+        left: calc(50% - (61px / 2));
+        top: -30px;
+        width: 61px;
+        height: 2px;
+        background-color: $color-black-two;
+        opacity: 0.2;
+      }
+    }
   }
 
   .catalog__info {
@@ -220,8 +262,36 @@
       display: block;
     }
   }
+
+  .catalog__paragraph {
+    font-size: 16px;
+    width: 167px;
+    text-align: center;
+    margin-bottom: 85px;
+    margin-left: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__button {
+    padding-right: 53px;
+    padding-left: 55px;
 
+    &--last {
+      padding-right: 39px;
+      padding-left: 41px;
+    }
+  }
+
+  .catalog__info {
+    width: 169px;
+  }
+
+  .catalog__description {
+    width: 169px;
+  }
+
+  .catalog__paragraph {
+    margin-left: 5px;
+  }
 }
