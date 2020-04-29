@@ -3,10 +3,9 @@
   display: flex;
   flex-direction: column;
 
-  &::after {
+  &::before {
     content: " ";
     position: absolute;
-    z-index: -1;
     left: 0;
     top: 100%;
     width: 320px;
@@ -44,7 +43,9 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include no-outline;
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__logo {
@@ -75,13 +76,19 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    &::after {
-      z-index: -3;
-      left: 0;
-      top: 100%;
-      width: 720px;
+    position: relative;
+    display: flex;
+
+    &::before {
+      display: block;
+      left: auto;
+      right: 0;
+      top: 0;
+      width: 50%;
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px auto;
+      background-position: right 0 bottom 0;
     }
   }
 }
