@@ -192,7 +192,12 @@
 
   .programms__article {
     width: 570px;
+    margin: 0;
     margin-bottom: 79px;
+
+    &--slim {
+      margin-right: 80px;
+    }
   }
 
   .programms__title {

@@ -137,6 +137,32 @@
 
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: $color-white;
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+      bottom: 0;
+      width: 50%;
+      height: 300px;
+    }
+
+    &::before {
+      background-color: $color-grey-light;
+      left: 0;
+    }
+
+    &::after {
+      background-color: red;
+      right: 0;
+    }
+  }
+
   .example__title {
     font-size: 60px;
   }
@@ -165,6 +191,7 @@
   .example__description {
     font-size: 14px;
     line-height: 14px;
+    background-color: $color-white;
   }
 
   .example__money {
@@ -200,7 +227,6 @@
     width: 650px;
     position: relative;
     height: 517px;
-    // margin-top: -150px;
   }
 
   .example__img {
@@ -247,6 +273,7 @@
   }
 
   .example__button {
+    margin: 0;
     width: 34px;
     height: 34px;
     top: calc(50% - (34px / 2));
@@ -320,7 +347,6 @@
 
       img {
         right: 0;
-        background-color: $color-grey-hr;
       }
     }
   }
