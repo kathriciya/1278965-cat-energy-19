@@ -71,8 +71,42 @@
   opacity: 1;
 }
 
+
+.goal-list__item input:disabled + label::before {
+  cursor: not-allowed;
+}
+
 @media (min-width: $tablet-width) {
   .goal-list__item {
     @include no-outline;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .goal-list__item label {
+    padding-left: 52px;
+  }
+
+  .goal-list__item input + label::before {
+    left: 0;
+    top: calc(50% - (40px / 2));
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-grey-hvr;
+  }
+
+  .goal-list__item:hover input + label::before {
+    border-color: $color-grey;
+  }
+
+  .goal-list__item input + label::after {
+    left: 11px;
+    top: calc(50% - (18px / 2));
+    width: 18px;
+    height: 18px;
+    background-color: $color-green;
+    opacity: 0;
   }
 }

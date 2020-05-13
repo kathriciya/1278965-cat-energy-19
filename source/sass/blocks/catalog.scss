@@ -8,24 +8,13 @@
   font-weight: normal;
   text-align: left;
   color: $color-black;
-
-  &::before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 179px;
-    width: 320px;
-    height: 1px;
-    background-color: $color-grey-hr;
-  }
 }
 
 .catalog__list {
   @include no-list;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 100%;
 }
 
@@ -83,13 +72,8 @@
 }
 
 .catalog__can {
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet {
-    display: none;
-  }
+  display: block;
+  // width: 100%;
 }
 
 .catalog__inner {
@@ -124,17 +108,6 @@
 .catalog__button {
   display: block;
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 13px;
-  padding-bottom: 12px;
-
-  &--last {
-    color: $color-grey-dark;
-    background-color: $color-grey-light;
-    padding-right: 94px;
-    padding-left: 95px;
-  }
 
   &::after {
     content: " ";
@@ -161,7 +134,6 @@
   }
 
   .catalog__title {
-    @include no-outline;
     font-size: 60px;
   }
 
@@ -177,14 +149,6 @@
   }
 
   .catalog__button {
-    padding-right: 93px;
-    padding-left: 95px;
-
-    &--last {
-      padding-right: 79px;
-      padding-left: 81px;
-    }
-
     &::after {
       @include no-outline;
     }
@@ -194,7 +158,7 @@
     background-color: $color-grey-light;
     padding-right: 37px;
     padding-bottom: 40px;
-    padding-left: 38px;
+    padding-left: 37px;
 
     &--last {
       background-color: yellowgreen;
@@ -254,13 +218,7 @@
   }
 
   .catalog__can {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+    display: block;
   }
 
   .catalog__paragraph {
@@ -273,16 +231,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__button {
-    padding-right: 53px;
-    padding-left: 55px;
-
-    &--last {
-      padding-right: 39px;
-      padding-left: 41px;
-    }
-  }
-
   .catalog__info {
     width: 169px;
   }
@@ -293,5 +241,20 @@
 
   .catalog__paragraph {
     margin-left: 5px;
+  }
+
+  .catalog__item {
+    &:not(:nth-child(4n)) {
+      margin-right: 77px;
+    }
+  }
+
+  .catalog__wrapper {
+    width: 245px;
+  }
+
+
+  .catalog__inner {
+    width: 167px;
   }
 }

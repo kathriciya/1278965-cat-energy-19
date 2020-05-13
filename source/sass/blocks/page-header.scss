@@ -6,13 +6,21 @@
   &::before {
     content: " ";
     position: absolute;
-    left: 0;
+    z-index: -1;
+    left: calc(50% - 160px);
+    right: calc(50% - 160px);
     top: 100%;
     width: 320px;
     height: 305px;
-    background-color: green;
+    background-color: $color-green;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 
   &--no-cat {
@@ -20,57 +28,69 @@
   }
 }
 
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__logo {
   height: 39px;
   text-align: left;
-  flex-direction: row;
+  margin: 20px 0;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    height: 1px;
+    background-color: $color-grey-hr;
+  }
 }
 
 .page-header__logo-img {
-  &--mobile {
-    display: block;
-    margin-top: 11px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    width: 191px;
-    height: 39px;
+  display: block;
+  width: 191px;
+  height: 39px;
+
+  &:hover {
+    opacity: 0.8;
   }
 
-  &--tablet {
-    display: none;
+  &:active {
+    opacity: 0.6;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    &::after {
+    &::before {
       display: none;
     }
+  }
+
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
   }
 
   .page-header__logo {
+    @include no-outline;
     height: 59px;
     text-align: left;
-    margin-right: 93px;
+    margin: 0;
   }
 
   .page-header__logo-img {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-      width: 174px;
-      height: 59px;
-    }
-  }
-
-  .page-header__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 25px 30px;
+    display: block;
+    margin: 0;
+    width: 174px;
+    height: 59px;
   }
 }
 
@@ -80,15 +100,26 @@
     display: flex;
 
     &::before {
+      position: absolute;
       display: block;
       left: auto;
       right: 0;
       top: 0;
       width: 50%;
       height: 696px;
+      background-color: $color-green;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: 720px auto;
-      background-position: right 0 bottom 0;
+      // background-position: right 0 bottom 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    &--no-cat {
+      @include no-outline;
     }
   }
 }

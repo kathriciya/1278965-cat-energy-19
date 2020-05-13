@@ -1,8 +1,7 @@
 .copyright {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
+  padding: 31px 0;
 }
 
 .copyright__text {
@@ -10,34 +9,42 @@
   font-size: 16px;
   line-height: 16px;
   text-align: left;
-
-  &:active {
-    color: $color-down-two;
-  }
 }
 
-.copyright__lolo-htmlacademy {
+.copyright__icon {
+  position: absolute;
+  top: 25px;
+  right: 0;
   width: 27px;
   height: 34px;
-
-  &:hover,
-  &:focus {
-    fill: $color-green;
-  }
-
-  &:active {
-    fill: $color-green;
-    opacity: 0.3;
-  }
+  fill: $color-grey-darken;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
+    width: 162px;
   }
 
   .copyright__text {
     text-align: right;
-    margin-right: 23px;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright__icon {
+    top: -8px;
+    right: -4px;
+
+    &:hover {
+      fill: $color-green;
+    }
+
+    &:active {
+      fill: $color-green;
+      opacity: 0.3;
+    }
   }
 }

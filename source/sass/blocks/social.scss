@@ -1,37 +1,45 @@
 .social__list {
   @include no-list;
+
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  width: 125px;
-  min-height: 62px;
   justify-content: center;
   align-items: center;
-  margin-left: 93px;
+
+  min-height: 62px;
 
   &::before {
     content: " ";
     position: absolute;
-    left: -79px;
+    left: 0;
     top: 0;
+
     width: 280px;
     height: 1px;
+
     background-color: $color-grey-darken;
+    opacity: 0.1;
   }
 
   &::after {
     content: " ";
     position: absolute;
-    left: -79px;
+    left: 0;
     top: 62px;
+
     width: 280px;
     height: 1px;
+
     background-color: $color-grey-darken;
+    opacity: 0.1;
   }
 }
 
 .social__item {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,36 +47,31 @@
 
 .social__link {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  &--vkontakte::before {
-    content: " ";
-    position: absolute;
-    left: -76px;
-    background-image: url("../img/icon-vk.svg");
-    background-repeat: no-repeat;
-    width: 22px;
-    height: 12px;
-  }
+.social__icon {
+  position: absolute;
+  left: -76px;
 
-  &--instagram::before {
-    content: " ";
-    position: absolute;
+  width: 22px;
+  height: 12px;
+
+  fill: $color-grey-darken;
+
+  &--insta {
     left: -12px;
-    background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
+
     width: 17px;
     height: 17px;
   }
 
-  &--facebook::before {
-    content: " ";
-    position: absolute;
+  &--fb {
     left: 52px;
-    background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
+
     width: 10px;
     height: 19px;
   }
@@ -77,24 +80,34 @@
 @media (min-width: $tablet-width) {
   .social__list {
     @include no-outline;
-    width: 125px;
+
     margin: 0;
+
+    width: 125px;
   }
 
-  .social__link {
-    &--vkontakte::before {
-      width: 30px;
-      height: 16px;
-    }
+  .social__icon {
+    width: 30px;
+    height: 16px;
 
-    &--instagram::before {
+    &--insta {
       width: 23px;
       height: 23px;
     }
 
-    &--facebook::before {
+    &--fb {
       width: 14px;
       height: 28px;
+    }
+
+    &:hover {
+      fill: $color-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      fill: $color-green;
     }
   }
 }

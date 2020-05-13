@@ -33,5 +33,14 @@ $color-hvr: rgba(255, 255, 255, 0.6);
 // Подбор программы
 $color-hvr-two: rgba(17, 17, 17, 0.6);
 
+$color-shadow: rgba(0, 0, 0, 0.15);
+
+$color-shadow-hvr: rgba(0, 0, 0, 0.25);
+
+$color-shadow-down: rgba(0, 0, 0, 0.3);
+
 $tablet-width: 768px;
+$mobile-width-only: 767px;
 $desktop-width: 1300px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

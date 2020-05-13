@@ -25,26 +25,12 @@
 }
 
 .promo__img {
-  &--mobile {
-    display: block;
-    background-color: transparent;
-  }
-
-  &--tablet {
-    display: none;
-  }
+  display: block;
+  background-color: transparent;
 }
 
 .promo__button {
   display: block;
-  background-color: $color-green;
-  color: $color-white;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-right: 73px;
-  padding-bottom: 11px;
-  padding-left: 73px;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,32 +58,20 @@
   }
 
   .promo__img {
-    &--mobile {
-      display: none;
-    }
+    display: block;
+    width: 709px;
+    height: 609px;
+  }
 
-    &--tablet {
-      position: relative;
-      display: block;
-      width: 709px;
-      height: 609px;
-    }
+  .promo__container {
+    position: relative;
   }
 
   .promo__button {
     position: absolute;
-    top: 374px;
+    top: 250px;
     left: 119px;
     color: $color-white;
     z-index: 5;
-    font-size: 20px;
-    line-height: 20px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding-top: 17px;
-    padding-right: 26px;
-    padding-bottom: 15px;
-    padding-left: 26px;
   }
 }

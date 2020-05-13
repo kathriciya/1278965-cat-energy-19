@@ -1,41 +1,127 @@
 .button {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: normal;
   font-style: normal;
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
   background-color: $color-green;
-  padding-top: 14px;
-  padding-right: 74px;
-  padding-bottom: 11px;
-  padding-left: 73px;
+  padding-top: 13px;
+  padding-right: 108px;
+  padding-bottom: 12px;
+  padding-left: 111px;
+
+  &:hover {
+    background-color: $color-green-hvr;
+  }
+
+  &:active {
+    color: $color-down-four;
+  }
+
+  &--send {
+    border: none;
+    padding-right: 77px;
+    padding-bottom: 11px;
+    padding-left: 79px;
+  }
+
+  &--promo {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 14px;
+    padding-right: 73px;
+    padding-bottom: 11px;
+    padding-left: 73px;
+  }
 
   &--arrow {
     font-size: 16px;
     line-height: 16px;
     text-align: left;
     color: $color-black;
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $color-black;
+    }
   }
 
-  &--buy {
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 13px;
-    padding-right: 108px;
-    padding-bottom: 12px;
-    padding-left: 111px;
-  }
+  &--last {
+    color: $color-grey-dark;
+    background-color: $color-grey-light;
+    padding-right: 94px;
+    padding-left: 95px;
 
-  &--send {
-    border: none;
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 13px;
-    padding-right: 77px;
-    padding-bottom: 11px;
-    padding-left: 79px;
+    &:hover {
+      background-color: $color-grey-two;
+    }
+
+    &:active {
+      color: $color-down-two;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-right: 93px;
+    padding-left: 95px;
+
+    &--last {
+      padding-right: 79px;
+      padding-left: 81px;
+    }
+
+    &--promo {
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 17px;
+      padding-right: 29px;
+      padding-bottom: 15px;
+      padding-left: 26px;
+    }
+
+    &--arrow {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+    }
+
+    &--send {
+      font-size: 20px;
+      padding-top: 17px;
+      padding-right: 63px;
+      padding-bottom: 15px;
+      padding-left: 63px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding-right: 53px;
+    padding-left: 55px;
+
+    &--last {
+      padding-right: 39px;
+      padding-left: 41px;
+    }
+
+    &--arrow {
+      padding: 0;
+    }
+
+    &--send {
+      padding-right: 206px;
+      padding-left: 208px;
+    }
   }
 }
