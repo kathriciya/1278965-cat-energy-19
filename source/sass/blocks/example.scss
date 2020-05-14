@@ -3,6 +3,9 @@
 }
 
 .example__title {
+  margin-top: 20px;
+  margin-bottom: 23px;
+  padding-top: 17px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -16,7 +19,7 @@
   line-height: 18px;
   font-weight: normal;
   text-align: left;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   width: 274px;
 }
 
@@ -39,15 +42,15 @@
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 17px;
-  padding-right: 44px;
+  padding-top: 13px;
+  padding-right: 42px;
   padding-bottom: 16px;
   padding-left: 43px;
   border: 1px solid $color-grey-hvr;
 
   &--day {
     padding-right: 23px;
-    padding-left: 23px;
+    padding-left: 19px;
   }
 }
 
@@ -60,10 +63,12 @@
   width: 85px;
   padding: 0 15px;
   background-color: $color-grey-light;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 .example__money {
+  margin-top: 7px;
+  margin-bottom: 35px;
   color: $color-black;
   font-size: 14px;
   line-height: 20px;
@@ -97,6 +102,8 @@
 
 .example__img {
   position: static;
+  width: 114%;
+  margin-left: -21px;
 
   img {
     position: static;
@@ -109,7 +116,7 @@
 
 .example__button {
   position: relative;
-  margin: 0 18px;
+  margin: 0 17px;
   width: 84px;
   height: 14px;
   border: 1px solid $color-grey-hvr;
@@ -133,6 +140,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 12px;
+  padding-bottom: 21px;
 }
 
 
@@ -173,10 +182,13 @@
     width: 684px;
   }
 
+  .example__field {
+    margin-right: 42px;
+  }
+
   .example__number {
     font-size: 30px;
     line-height: 37px;
-    margin-right: 42px;
     padding-top: 22px;
     padding-right: 58px;
     padding-bottom: 24px;
@@ -189,6 +201,7 @@
   }
 
   .example__description {
+    width: 157px;
     font-size: 14px;
     line-height: 14px;
     background-color: $color-white;
@@ -264,6 +277,10 @@
     top: 0;
   }
 
+  .example__controls {
+    padding-bottom: 20px;
+  }
+
   .example__scale {
     width: 428px;
     margin: 0 23px;
@@ -309,7 +326,32 @@
     justify-content: space-between;
   }
 
-  // ширина либо своих либо без
+  .example {
+    background-color: $color-white;
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+      bottom: 0;
+      height: 462px;
+    }
+
+    &::before {
+      width: 72.5%;
+      background-color: $color-grey-light;
+      left: 0;
+    }
+
+    &::after {
+      width: 27.5%;
+      background-color: red;
+      right: 0;
+    }
+  }
 
   .example__paragraph {
     width: 430px;

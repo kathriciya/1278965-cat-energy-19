@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-self: stretch;
 
   min-height: 62px;
 
@@ -39,15 +40,13 @@
 
 .social__item {
   position: relative;
-
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
 .social__link {
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +54,7 @@
 
 .social__icon {
   position: absolute;
-  left: -76px;
+  left: -67px;
 
   width: 22px;
   height: 12px;
@@ -63,14 +62,14 @@
   fill: $color-grey-darken;
 
   &--insta {
-    left: -12px;
+    left: -10px;
 
     width: 17px;
     height: 17px;
   }
 
   &--fb {
-    left: 52px;
+    left: 48px;
 
     width: 10px;
     height: 19px;

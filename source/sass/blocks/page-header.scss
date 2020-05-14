@@ -9,7 +9,7 @@
     z-index: -1;
     left: calc(50% - 160px);
     right: calc(50% - 160px);
-    top: 100%;
+    top: 103%;
     width: 320px;
     height: 305px;
     background-color: $color-green;
@@ -36,13 +36,13 @@
 .page-header__logo {
   height: 39px;
   text-align: left;
-  margin: 20px 0;
+  margin: 10px 0;
   position: relative;
 
   &::before {
     content: " ";
     position: absolute;
-    bottom: -20px;
+    bottom: -17px;
     right: -20px;
     left: -20px;
     height: 1px;

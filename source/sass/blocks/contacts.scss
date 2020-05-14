@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 31px;
+  padding-top: 28px;
   padding-bottom: 26px;
   background-color: $color-white;
 
@@ -22,11 +22,12 @@
 }
 
 .contacts__address {
-  width: 135px;
+  width: 136px;
   font-family: "Arial", sans-serif;
   line-height: 20px;
   text-align: left;
   margin: 0;
+  margin-right: 2px;
 }
 
 @media (min-width: $tablet-width) {

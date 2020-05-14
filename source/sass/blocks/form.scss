@@ -4,12 +4,24 @@
 }
 
 .form__item {
-  display: flex;
+  // display: flex;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 0;
 
   border: none;
+
+  &--contact {
+    margin-bottom: -20px;
+  }
+
+  &--comment {
+    margin-bottom: 20px;
+  }
+
+  &--additionally {
+    margin-bottom: 31px;
+  }
 }
 
 .form__paragraph {
@@ -17,7 +29,7 @@
   width: 100%;
   align-items: baseline;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   &--age {
     margin-bottom: 0;
@@ -51,7 +63,6 @@
 }
 
 .form__input {
-  display: flex;
   box-sizing: border-box;
   width: 100%;
   height: 45px;
@@ -89,8 +100,8 @@
   box-sizing: border-box;
   width: 100%;
   height: 150px;
-  padding-top: 15px;
-  padding-left: 16px;
+  padding-top: 13px;
+  padding-left: 13px;
   resize: none;
   border: 1px solid rgba($color-grey-hvr, 0.5);
   font-size: 16px;
@@ -102,8 +113,9 @@
 
 .form__legend {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-left: -1px;
+  padding-top: 5px;
+  margin-bottom: 20px;
   width: 100%;
   font-size: 24px;
   line-height: 24px;
@@ -111,11 +123,20 @@
   color: $color-black;
   text-align: left;
 
+  &--line-comment {
+    padding-top: 35px;
+    margin-bottom: 34px;
+  }
+
+  &--line-additionally {
+    margin-bottom: 27px;
+  }
+
   &--line-contact::after {
     content: "";
     position: absolute;
     right: -20px;
-    top: 42px;
+    top: 19px;
     width: 99px;
     height: 3px;
     background-color: $color-green;
@@ -125,7 +146,7 @@
     content: "";
     position: absolute;
     right: -20px;
-    top: 42px;
+    top: 48px;
     width: 158px;
     height: 3px;
     background-color: $color-green;
@@ -135,7 +156,7 @@
     content: "";
     position: absolute;
     right: -20px;
-    top: 42px;
+    top: 19px;
     width: 136px;
     height: 3px;
     background-color: $color-green;
@@ -151,7 +172,7 @@
   position: absolute;
   top: 16px;
   left: auto;
-  right: 20px;
+  right: 15px;
   width: 18px;
   height: 14px;
   fill: $color-black-two;

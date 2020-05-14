@@ -2,6 +2,7 @@
   @include no-list;
   display: flex;
   flex-direction: column;
+  // margin-top: 30px;
 }
 
 .goal-list__item {
@@ -14,14 +15,14 @@
   text-align: left;
 
   &:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
 
   &:first-child::before {
     content: " ";
     position: absolute;
     left: -20px;
-    top: -11px;
+    top: -27px;
     width: 320px;
     height: 1px;
     background-color: $color-grey-hr;
@@ -31,7 +32,7 @@
     content: " ";
     position: absolute;
     left: -20px;
-    top: 150px;
+    top: 130px;
     width: 320px;
     height: 1px;
     background-color: $color-grey-hr;
@@ -40,7 +41,7 @@
 
 .goal-list__item label {
   position: relative;
-  padding-left: 42px;
+  padding-left: 45px;
 }
 
 .goal-list__item input + label::before {

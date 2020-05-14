@@ -26,12 +26,15 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  padding-top: 39px;
-  padding-bottom: 31px;
+  margin-top: 36px;
+  margin-bottom: 31px;
   background-color: $color-grey-light;
 }
 
 .page-footer__logo img {
+  width: 128px;
+  height: 24px;
+
   &:hover {
     opacity: 0.8;
   }

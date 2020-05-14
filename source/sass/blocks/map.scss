@@ -6,8 +6,8 @@
     content: " ";
     position: absolute;
     z-index: 2;
-    left: 127px;
-    top: 176px;
+    left: 130px;
+    top: 138px;
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@
 
 .map__img {
   width: 320px;
-  height: 400px;
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {

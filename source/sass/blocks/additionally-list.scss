@@ -4,7 +4,7 @@
 
 .additionally-list__item {
   padding-top: 14px;
-  padding-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -15,7 +15,7 @@
 
 .additionally-list__item label {
   position: relative;
-  padding-left: 42px;
+  padding-left: 45px;
 }
 
 .additionally-list__item input + label::before {
