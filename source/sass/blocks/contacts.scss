@@ -4,6 +4,7 @@
   align-items: center;
   padding-top: 28px;
   padding-bottom: 26px;
+
   background-color: $color-white;
 
   &--no-index {
@@ -13,45 +14,49 @@
 
 .contacts__invitation {
   width: 143px;
+  margin: 0;
+
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
   text-transform: uppercase;
   text-align: left;
-  margin: 0;
 }
 
 .contacts__address {
   width: 136px;
+  margin: 0;
+  margin-right: 2px;
+
   font-family: "Arial", sans-serif;
   line-height: 20px;
   text-align: left;
-  margin: 0;
-  margin-right: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__container {
     display: flex;
-    min-height: 76px;
     justify-content: space-between;
     align-items: center;
     padding-top: 69px;
     padding-bottom: 62px;
+    min-height: 76px;
   }
 
   .contacts__invitation {
     width: 173px;
+    margin: 0;
+
     font-size: 20px;
     line-height: 25px;
-    margin: 0;
   }
 
   .contacts__address {
     width: 155px;
+    padding: 0;
+
     font-size: 16px;
     text-align: right;
-    padding: 0;
   }
 
   .contacts__address span {

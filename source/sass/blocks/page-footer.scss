@@ -5,6 +5,7 @@
 
 .page-footer__map {
   display: block;
+
   background-color: $color-grey-light;
 }
 
@@ -20,6 +21,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
   background-color: $color-grey-light;
 }
 
@@ -28,6 +30,7 @@
   justify-content: center;
   margin-top: 36px;
   margin-bottom: 31px;
+
   background-color: $color-grey-light;
 }
 
@@ -58,16 +61,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $color-grey-light;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    background-color: $color-grey-light;
   }
 
   .page-footer__map {
     display: block;
-    background-color: $color-grey-light;
     margin: 0 auto;
     padding: 0;
+
+    background-color: $color-grey-light;
   }
 }
 
@@ -75,17 +80,18 @@
   .page-footer__top {
     position: relative;
     padding: 0;
+
     background-color: $color-grey-light;
   }
 
   .page-footer__contacts {
+    position: absolute;
     display: block;
     width: 570px;
     z-index: 2;
-    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 110px;
+    transform: translateY(-50%);
   }
 
   .page-footer__map {

@@ -14,7 +14,6 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   width: 100%;
 }
 
@@ -28,6 +27,7 @@
 
 .catalog__product {
   width: 72px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -38,6 +38,7 @@
     padding-top: 45px;
     margin: 15px auto;
     width: 204px;
+
     text-align: center;
     text-transform: uppercase;
 
@@ -46,8 +47,10 @@
       position: absolute;
       left: 90px;
       top: 12px;
+
       width: 31px;
       height: 2px;
+
       background-color: $color-black-two;
       opacity: 0.2;
       transform: rotate(90deg);
@@ -58,8 +61,10 @@
       position: absolute;
       left: 90px;
       top: 12px;
+
       width: 31px;
       height: 2px;
+
       background-color: $color-black-two;
       opacity: 0.2;
       transform: rotate(180deg);
@@ -73,7 +78,6 @@
 
 .catalog__can {
   display: block;
-  // width: 100%;
 }
 
 .catalog__inner {
@@ -115,8 +119,10 @@
     left: -20px;
     right: 0;
     top: 70px;
+
     width: 320px;
     height: 1px;
+
     background-color: $color-grey-hr;
   }
 }
@@ -144,8 +150,8 @@
 
   .catalog__item {
     flex-direction: column;
-    min-width: 248px;
     margin-bottom: 100px;
+    min-width: 248px;
 
     &:not(:nth-child(2n)) {
       margin-right: 45px;
@@ -159,15 +165,17 @@
   }
 
   .catalog__wrapper {
-    width: 324px;
-    background-color: $color-grey-light;
     padding-right: 37px;
     padding-bottom: 40px;
     padding-left: 37px;
+    width: 324px;
+
+    background-color: $color-grey-light;
 
     &--last {
-      background-color: yellowgreen;
       padding-top: 70px;
+
+      background-color: yellowgreen;
     }
   }
 
@@ -178,18 +186,21 @@
 
   .catalog__product {
     width: 124px;
+
     font-size: 20px;
     text-align: center;
 
     &--last {
-      width: 134px;
       margin-bottom: 28px;
+      width: 134px;
 
       &::before {
         left: calc(50% - (61px / 2));
         top: -30px;
+
         width: 61px;
         height: 2px;
+
         background-color: $color-black-two;
         opacity: 0.2;
       }
@@ -197,8 +208,10 @@
       &::after {
         left: calc(50% - (61px / 2));
         top: -30px;
+
         width: 61px;
         height: 2px;
+
         background-color: $color-black-two;
         opacity: 0.2;
       }
@@ -206,14 +219,17 @@
   }
 
   .catalog__info {
-    width: 249px;
-    font-size: 16px;
-    border-collapse: collapse;
     margin-bottom: 33px;
+    width: 249px;
+
+    font-size: 16px;
+
+    border-collapse: collapse;
   }
 
   .catalog__info td {
     padding: 10px 0;
+
     border-bottom: 1px solid $color-grey-hvr;
   }
 
@@ -232,11 +248,12 @@
   }
 
   .catalog__paragraph {
-    font-size: 16px;
-    width: 167px;
     text-align: center;
     margin-bottom: 70px;
     margin-left: 40px;
+    width: 167px;
+
+    font-size: 16px;
   }
 }
 

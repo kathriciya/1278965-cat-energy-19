@@ -1,4 +1,9 @@
 .button {
+  padding-top: 13px;
+  padding-right: 108px;
+  padding-bottom: 12px;
+  padding-left: 111px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -7,11 +12,8 @@
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
+
   background-color: $color-green;
-  padding-top: 13px;
-  padding-right: 108px;
-  padding-bottom: 12px;
-  padding-left: 111px;
 
   &:hover {
     background-color: $color-green-hvr;
@@ -22,29 +24,33 @@
   }
 
   &--send {
-    border: none;
     padding-top: 11px;
     padding-right: 77px;
     padding-bottom: 9px;
     padding-left: 79px;
+
+    border: none;
   }
 
   &--promo {
-    font-size: 14px;
-    line-height: 18px;
     padding-top: 12px;
     padding-right: 72px;
     padding-bottom: 11px;
     padding-left: 73px;
+
+    font-size: 14px;
+    line-height: 18px;
   }
 
   &--arrow {
+    padding: 0;
+
     font-size: 16px;
     line-height: 16px;
-    text-align: left;
     color: $color-black;
+    text-align: left;
+
     background-color: transparent;
-    padding: 0;
 
     &:hover {
       background-color: transparent;
@@ -56,10 +62,12 @@
   }
 
   &--last {
-    color: $color-grey-dark;
-    background-color: $color-grey-light;
     padding-right: 94px;
     padding-left: 95px;
+
+    color: $color-grey-dark;
+
+    background-color: $color-grey-light;
 
     &:hover {
       background-color: $color-grey-two;
@@ -82,26 +90,29 @@
     }
 
     &--promo {
-      font-size: 20px;
-      line-height: 20px;
       padding-top: 17px;
       padding-right: 29px;
       padding-bottom: 15px;
       padding-left: 26px;
+
+      font-size: 20px;
+      line-height: 20px;
     }
 
     &--arrow {
+      padding: 0;
+
       font-size: 20px;
       line-height: 20px;
-      padding: 0;
     }
 
     &--send {
-      font-size: 20px;
       padding-top: 17px;
       padding-right: 63px;
       padding-bottom: 15px;
       padding-left: 63px;
+
+      font-size: 20px;
     }
   }
 }

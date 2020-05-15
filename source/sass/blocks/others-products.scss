@@ -4,19 +4,22 @@
 
 .others-products__title {
   position: relative;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  text-align: left;
   color: $color-black;
+  text-align: left;
 
   &::after {
     content: "";
     position: absolute;
     right: -20px;
     top: 16px;
+
     width: 53px;
     height: 3px;
+
     background-color: $color-green;
   }
 }
@@ -33,6 +36,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+
   border-bottom: 1px solid $color-grey-hvr;
 
   &:first-child {
@@ -45,17 +49,18 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
+  color: $color-black-two;
   text-align: left;
   text-transform: uppercase;
-  color: $color-black-two;
 }
 
 .others-products__info {
   width: 280px;
+  margin-bottom: 14px;
+
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  margin-bottom: 14px;
 }
 
 .others-products__field {
@@ -68,44 +73,50 @@
 
 @media (min-width: $tablet-width) {
   .others-products__title {
+    padding-left: 38px;
+
     font-size: 36px;
     line-height: 36px;
-    padding-left: 38px;
 
     &::before {
       content: "";
       position: absolute;
       left: -30px;
       top: 20px;
+
       width: 30px;
       height: 3px;
+
       background-color: $color-green;
     }
 
     &::after {
+      width: 316px;
       right: -30px;
       top: 20px;
-      width: 316px;
     }
   }
 
   .others-products__item {
-    border-right: 1px solid $color-grey-hvr;
-    border-left: 1px solid $color-grey-hvr;
     padding-top: 28px;
     padding-right: 38px;
     padding-bottom: 28px;
     padding-left: 38px;
+
+    border-right: 1px solid $color-grey-hvr;
+    border-left: 1px solid $color-grey-hvr;
   }
 
   .others-products__product {
+    margin: 0;
+
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
   }
 
   .others-products__info {
     margin: 0;
+
     font-size: 16px;
     line-height: 20px;
   }
@@ -144,10 +155,10 @@
 
   .others-products__buy {
     &:first-child {
-      margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       width: 100%;
+      margin-bottom: 0;
     }
   }
 
@@ -156,9 +167,9 @@
   }
 
   .others-products__wrapper {
-    width: 1220px;
     display: flex;
     justify-content: space-between;
+    width: 1220px;
     margin-bottom: 80px;
   }
 
@@ -175,11 +186,12 @@
   }
 
   .others-products__item {
-    border-right: 0;
-    border-left: 0;
     padding-top: 15px;
     padding-right: 0;
     padding-bottom: 12px;
     padding-left: 0;
+
+    border-right: 0;
+    border-left: 0;
   }
 }

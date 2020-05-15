@@ -4,10 +4,9 @@
 }
 
 .form__item {
-  // display: flex;
+  padding: 0;
   margin: 0;
   margin-bottom: 50px;
-  padding: 0;
 
   border: none;
 
@@ -26,10 +25,10 @@
 
 .form__paragraph {
   display: flex;
-  width: 100%;
   align-items: baseline;
   margin-top: 0;
   margin-bottom: 14px;
+  width: 100%;
 
   &--age {
     margin-bottom: 0;
@@ -39,23 +38,24 @@
 .form__contact {
   position: relative;
   display: flex;
-  width: 100%;
   align-items: baseline;
+  width: 100%;
 }
 
 .form__item label {
+  flex-shrink: 0;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   color: $color-black-two;
   text-align: left;
   text-transform: uppercase;
-  flex-shrink: 0;
 }
 
 .form__label {
-  margin-left: 0;
   margin-right: 15px;
+  margin-left: 0;
 
   &--contact {
     margin-right: 11px;
@@ -70,12 +70,14 @@
   padding-right: 45px;
   padding-bottom: 15px;
   padding-left: 16px;
-  border: 1px solid rgba($color-grey-hvr, 0.5);
-  font-size: 16px;
-  line-height: 18px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  border: 1px solid rgba($color-grey-hvr, 0.5);
 
   &:hover {
     border-color: $color-grey-hvr;
@@ -103,20 +105,23 @@
   padding-top: 13px;
   padding-left: 13px;
   resize: none;
-  border: 1px solid rgba($color-grey-hvr, 0.5);
-  font-size: 16px;
-  line-height: 18px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  border: 1px solid rgba($color-grey-hvr, 0.5);
 }
 
 .form__legend {
   position: relative;
-  margin-left: -1px;
   padding-top: 5px;
+  margin-left: -1px;
   margin-bottom: 20px;
   width: 100%;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
@@ -137,8 +142,10 @@
     position: absolute;
     right: -20px;
     top: 19px;
+
     width: 99px;
     height: 3px;
+
     background-color: $color-green;
   }
 
@@ -147,8 +154,10 @@
     position: absolute;
     right: -20px;
     top: 48px;
+
     width: 158px;
     height: 3px;
+
     background-color: $color-green;
   }
 
@@ -157,8 +166,10 @@
     position: absolute;
     right: -20px;
     top: 19px;
+
     width: 136px;
     height: 3px;
+
     background-color: $color-green;
   }
 }
@@ -173,12 +184,15 @@
   top: 16px;
   left: auto;
   right: 15px;
+
   width: 18px;
   height: 14px;
+
   fill: $color-black-two;
 
   &--tel {
     top: 13px;
+
     width: 21px;
     height: 21px;
   }
@@ -201,6 +215,7 @@
   .form__legend {
     padding-top: 30px;
     padding-bottom: 30px;
+
     font-size: 36px;
     line-height: 36px;
 
@@ -209,26 +224,31 @@
       position: absolute;
       left: -72px;
       top: 52px;
+
       width: 30px;
       height: 3px;
+
       background-color: $color-green;
     }
 
     &--line-contact::after {
       right: -67px;
       top: 52px;
+
       width: 150px;
     }
 
     &--line-comment::after {
       right: -67px;
       top: 52px;
+
       width: 470px;
     }
 
     &--line-additionally::after {
       right: -67px;
       top: 52px;
+
       width: 440px;
     }
   }
@@ -240,11 +260,11 @@
 
   .form__send {
     display: flex;
-    width: 630px;
-    min-height: 52px;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 72px;
+    width: 630px;
+    min-height: 52px;
   }
 
   .form__item {
@@ -252,10 +272,11 @@
     padding-left: 42px;
 
     &--goal {
-      padding: 25px 28px;
       display: flex;
-      width: 630px;
+      padding: 25px 28px;
       margin-left: 37px;
+      width: 630px;
+
       border: 1px solid $color-grey-hvr;
       // opacity: 0.5;
     }
@@ -281,9 +302,9 @@
     }
 
     &--goal {
+      padding-bottom: 10px;
       margin: 0;
       margin-left: 80px;
-      padding-bottom: 10px;
     }
 
     &--contact {
@@ -312,10 +333,10 @@
 
   .form__send {
     display: flex;
-    width: 100%;
-    min-height: 52px;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 82px;
+    width: 100%;
+    min-height: 52px;
   }
 }

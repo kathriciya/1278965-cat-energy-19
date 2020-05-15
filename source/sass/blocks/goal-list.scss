@@ -2,11 +2,11 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  // margin-top: 30px;
 }
 
 .goal-list__item {
   position: relative;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -23,8 +23,10 @@
     position: absolute;
     left: -20px;
     top: -27px;
+
     width: 320px;
     height: 1px;
+
     background-color: $color-grey-hr;
   }
 
@@ -33,8 +35,10 @@
     position: absolute;
     left: -20px;
     top: 130px;
+
     width: 320px;
     height: 1px;
+
     background-color: $color-grey-hr;
   }
 }
@@ -49,8 +53,10 @@
   position: absolute;
   left: 0;
   top: calc(50% - (30px / 2));
+
   width: 30px;
   height: 30px;
+
   border: 1px solid $color-grey-hvr;
   border-radius: 50%;
   cursor: pointer;
@@ -61,8 +67,10 @@
   position: absolute;
   left: 9px;
   top: calc(50% - (12px / 2));
+
   width: 12px;
   height: 12px;
+
   background-color: $color-green;
   border-radius: 50%;
   opacity: 0;
@@ -93,8 +101,10 @@
   .goal-list__item input + label::before {
     left: 0;
     top: calc(50% - (40px / 2));
+
     width: 40px;
     height: 40px;
+
     border: 1px solid $color-grey-hvr;
   }
 
@@ -105,8 +115,10 @@
   .goal-list__item input + label::after {
     left: 11px;
     top: calc(50% - (18px / 2));
+
     width: 18px;
     height: 18px;
+
     background-color: $color-green;
     opacity: 0;
   }

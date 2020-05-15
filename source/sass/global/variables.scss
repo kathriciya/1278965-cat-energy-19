@@ -1,4 +1,3 @@
-// Color
 $color-white: #ffffff;
 $color-grey-light:#f2f2f2;
 $color-grey:#bababa;
@@ -6,41 +5,25 @@ $color-grey-two: #ebebeb;
 $color-grey-hr: #ededed;
 $color-grey-dark: #444444;
 $color-grey-darken: #666666;
-$color-green: #68b738;
-$color-green-hvr: #5eaa2f;
 $color-grey-hvr: #cdcdcd;
 $color-black: #111111;
-$color-error: #ff8282;
-
-// для формы
 $color-black-two: #222222;
-
-// Checkbox DOWN & Radio button Down
 $color-down: rgba(34, 34, 34, 0.3);
-
-//Grey button Down
 $color-down-two: rgba(68, 68, 68, 0.3);
-
-// Каталог Slim & Подбор программы
 $color-down-three: rgba(17, 17, 17, 0.3);
-
-// Green button Down & Каталог продукции
 $color-down-four: rgba(255, 255, 255, 0.3);
-
-// Каталог продукции
 $color-hvr: rgba(255, 255, 255, 0.6);
-
-// Подбор программы
 $color-hvr-two: rgba(17, 17, 17, 0.6);
-
 $color-shadow: rgba(0, 0, 0, 0.15);
-
 $color-shadow-hvr: rgba(0, 0, 0, 0.25);
-
 $color-shadow-down: rgba(0, 0, 0, 0.3);
+$color-green: #68b738;
+$color-green-hvr: #5eaa2f;
+$color-error: #ff8282;
 
 $tablet-width: 768px;
 $mobile-width-only: 767px;
 $desktop-width: 1300px;
+
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

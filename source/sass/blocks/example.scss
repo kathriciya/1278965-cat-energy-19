@@ -3,9 +3,10 @@
 }
 
 .example__title {
+  padding-top: 17px;
   margin-top: 20px;
   margin-bottom: 23px;
-  padding-top: 17px;
+
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -14,13 +15,14 @@
 }
 
 .example__paragraph {
+  margin-bottom: 25px;
+  width: 274px;
+
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   text-align: left;
-  margin-bottom: 25px;
-  width: 274px;
 }
 
 .example__paragraph span {
@@ -28,7 +30,6 @@
 }
 
 .example__field {
-  // position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -36,16 +37,18 @@
 }
 
 .example__number {
-  color: $color-black;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
   padding-top: 13px;
   padding-right: 42px;
   padding-bottom: 16px;
   padding-left: 43px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $color-black;
+  text-align: center;
+  text-transform: uppercase;
+
   border: 1px solid $color-grey-hvr;
 
   &--day {
@@ -55,33 +58,36 @@
 }
 
 .example__description {
+  padding: 0 15px;
+  margin-top: -8px;
+  width: 85px;
+
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: normal;
   text-align: center;
-  width: 85px;
-  padding: 0 15px;
+
   background-color: $color-grey-light;
-  margin-top: -8px;
 }
 
 .example__money {
   margin-top: 7px;
   margin-bottom: 35px;
-  color: $color-black;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
+  color: $color-black;
   text-align: center;
   text-transform: uppercase;
 }
 
 .example__point {
-  color: $color-black;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
+  color: $color-black;
   text-align: left;
   text-transform: uppercase;
 
@@ -102,8 +108,8 @@
 
 .example__img {
   position: static;
-  width: 114%;
   margin-left: -21px;
+  width: 114%;
 
   img {
     position: static;
@@ -117,8 +123,10 @@
 .example__button {
   position: relative;
   margin: 0 17px;
+
   width: 84px;
   height: 14px;
+
   border: 1px solid $color-grey-hvr;
   border-radius: 6px;
   background-color: $color-white;
@@ -129,8 +137,10 @@
     content: " ";
     top: calc(50% - (6px / 2));
     left: 6px;
+
     width: 35px;
     height: 6px;
+
     border-radius: 3px;
     background-color: $color-green;
   }
@@ -140,16 +150,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 12px;
   padding-bottom: 21px;
+  margin-top: 12px;
 }
 
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $color-white;
     position: relative;
     z-index: 1;
+
+    background-color: $color-white;
 
     &::before,
     &::after {
@@ -157,18 +168,21 @@
       content: " ";
       z-index: -1;
       bottom: 0;
+
       width: 50%;
       height: 300px;
     }
 
     &::before {
-      background-color: $color-grey-light;
       left: 0;
+
+      background-color: $color-grey-light;
     }
 
     &::after {
-      background-color: red;
       right: 0;
+
+      background-color: red;
     }
   }
 
@@ -177,9 +191,10 @@
   }
 
   .example__paragraph {
+    width: 684px;
+
     font-size: 16px;
     line-height: 24px;
-    width: 684px;
   }
 
   .example__field {
@@ -187,12 +202,13 @@
   }
 
   .example__number {
-    font-size: 30px;
-    line-height: 37px;
     padding-top: 22px;
     padding-right: 58px;
     padding-bottom: 24px;
     padding-left: 57px;
+
+    font-size: 30px;
+    line-height: 37px;
 
     &--day {
       padding-right: 31px;
@@ -202,8 +218,10 @@
 
   .example__description {
     width: 157px;
+
     font-size: 14px;
     line-height: 14px;
+
     background-color: $color-white;
   }
 
@@ -218,9 +236,11 @@
   }
 
   .example__point {
-    font-size: 20px;
     width: 45px;
     padding-bottom: 6px;
+
+    font-size: 20px;
+
     border-bottom: 1px dotted rgba($color-black, 0.23);
 
     &--after {
@@ -237,8 +257,9 @@
   }
 
   .example__slider {
-    width: 650px;
     position: relative;
+
+    width: 650px;
     height: 517px;
   }
 
@@ -247,10 +268,12 @@
     overflow: hidden;
     top: 0;
     bottom: 0;
+
     width: 50%;
 
     &--before {
       left: -40px;
+
       width: 61%;
 
       img {
@@ -261,6 +284,7 @@
     &--after {
       display: block;
       right: -49px;
+
       width: 53%;
 
       img {
@@ -270,11 +294,12 @@
   }
 
   .example__img img {
-    display: block;
     position: absolute;
+    display: block;
+    top: 0;
+
     max-width: none;
     height: auto;
-    top: 0;
   }
 
   .example__controls {
@@ -282,30 +307,35 @@
   }
 
   .example__scale {
-    width: 428px;
     margin: 0 23px;
+    width: 428px;
     height: 6px;
+
     border-radius: 2.5px;
     background-color: $color-grey-hvr;
   }
 
   .example__button {
     margin: 0;
-    width: 34px;
-    height: 34px;
     top: calc(50% - (34px / 2));
     left: calc(50% - (34px / 2));
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $color-white;
+    border-radius: 50%;
     border: 1px solid $color-grey-hvr;
     box-shadow: 0 2px 5px 0 $color-shadow;
-    border-radius: 50%;
-    background-color: $color-white;
     cursor: pointer;
 
     &::before {
       top: calc(50% - (8px / 2));
       left: calc(50% - (8px / 2));
+
       width: 8px;
       height: 8px;
+
       border-radius: 50%;
     }
   }
@@ -316,8 +346,8 @@
 }
 
 .example__button:active {
-  box-shadow: 0 4px 5px 0 $color-shadow-down;
   border: 2px solid $color-green;
+  box-shadow: 0 4px 5px 0 $color-shadow-down;
 }
 
 @media (min-width: $desktop-width) {
@@ -327,29 +357,35 @@
   }
 
   .example {
-    background-color: $color-white;
     position: relative;
     z-index: 1;
 
+    background-color: $color-white;
+
     &::before,
     &::after {
-      position: absolute;
       content: " ";
+      position: absolute;
       z-index: -1;
       bottom: 0;
+
       height: 462px;
     }
 
     &::before {
-      width: 72.5%;
-      background-color: $color-grey-light;
       left: 0;
+
+      width: 72.5%;
+
+      background-color: $color-grey-light;
     }
 
     &::after {
-      width: 27.5%;
-      background-color: red;
       right: 0;
+
+      width: 27.5%;
+
+      background-color: red;
     }
   }
 
@@ -358,8 +394,8 @@
   }
 
   .example__box {
-    width: 430px;
     margin-right: 0;
+    width: 430px;
 
     &--cat {
       width: 630px;
@@ -371,10 +407,12 @@
     overflow: hidden;
     top: 0;
     bottom: 0;
+
     width: 50%;
 
     &--before {
       left: 0;
+
       width: 45%;
 
       img {
@@ -385,6 +423,7 @@
     &--after {
       display: block;
       right: 0;
+
       width: 55%;
 
       img {

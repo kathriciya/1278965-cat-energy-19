@@ -7,10 +7,11 @@
   margin: 0;
   margin-top: 34px;
   margin-bottom: 24px;
-  color: $color-white;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  color: $color-white;
   text-align: center;
 }
 
@@ -18,14 +19,16 @@
   display: block;
   margin: 0;
   margin-bottom: 31px;
-  color: $color-white;
+
   line-height: 14px;
+  color: $color-white;
   text-align: center;
   text-transform: uppercase;
 }
 
 .promo__img {
   display: block;
+
   background-color: transparent;
 }
 
@@ -40,21 +43,23 @@
 
   .promo__title {
     width: 414px;
-    color: $color-black;
+    margin-left: 91px;
+
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
+    color: $color-black;
     text-align: left;
-    margin-left: 91px;
   }
 
   .promo__paragraph {
-    color: $color-black;
+    margin-left: 89px;
+
     font-size: 20px;
     line-height: 20px;
+    color: $color-black;
     text-transform: uppercase;
     text-align: left;
-    margin-left: 89px;
   }
 
   .promo__img {
@@ -71,7 +76,8 @@
     position: absolute;
     top: 250px;
     left: 119px;
-    color: $color-white;
     z-index: 5;
+
+    color: $color-white;
   }
 }
