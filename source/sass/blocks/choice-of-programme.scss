@@ -26,7 +26,9 @@
 }
 
 .choice-of-programme__nota-bene {
-  margin-top: 16px;
+  position: relative;
+  margin-top: 20px;
+  margin-right: -9px;
   margin-bottom: 32px;
 
   font-family: "Arial", sans-serif;
@@ -35,20 +37,35 @@
   text-align: center;
 }
 
+.choice-of-programme__nota-bene sup {
+  position: absolute;
+  left: 63px;
+}
+
 @media (min-width: $tablet-width) {
   .choice-of-programme__title {
+    margin-top: 43px;
+    margin-bottom: 55px;
+
     font-size: 60px;
   }
 
   .choice-of-programme__paragraph {
-    margin-left: 37px;
+    margin-left: 40px;
+    margin-bottom: 69px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
   .choice-of-programme__nota-bene {
+    padding-top: 6px;
     font-size: 16px;
+  }
+
+  .choice-of-programme__nota-bene sup {
+    position: absolute;
+    left: -11px;
   }
 }
 

@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   margin: 0;
-  width: 280px;
 }
 
 .main-nav__list {
@@ -96,7 +95,6 @@
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    width: 708px;
   }
 
   .main-nav__toggle {
@@ -105,10 +103,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    width: 1220px;
-  }
-
   .main-nav--index .site-list__item a {
     color: $color-white;
 
@@ -127,7 +121,7 @@
     &::before {
       content: " ";
       position: absolute;
-      top: 30px;
+      top: 33px;
 
       width: 100%;
       height: 2px;

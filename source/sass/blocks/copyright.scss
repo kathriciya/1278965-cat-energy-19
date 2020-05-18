@@ -1,7 +1,8 @@
 .copyright {
   position: relative;
   display: flex;
-  padding: 31px 0;
+  margin-top: 21px;
+  margin-bottom: 31px;
 }
 
 .copyright__text {
@@ -13,11 +14,11 @@
 
 .copyright__icon {
   position: absolute;
-  top: 18px;
-  right: -4px;
+  top: -16px;
+  right: -6px;
 
-  width: 36px;
-  height: 44px;
+  width: 39px;
+  height: 47px;
 
   fill: $color-grey-darken;
 }
@@ -37,7 +38,7 @@
   }
 
   .copyright__icon {
-    top: -8px;
+    top: -12px;
     right: -4px;
 
     &:hover {

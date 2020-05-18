@@ -85,9 +85,15 @@
   cursor: not-allowed;
 }
 
+// Tablet!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 @media (min-width: $tablet-width) {
   .goal-list__item {
     @include no-outline;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
 
     &:active {
       opacity: 0.3;
@@ -95,7 +101,7 @@
   }
 
   .goal-list__item label {
-    padding-left: 52px;
+    padding-left: 60px;
   }
 
   .goal-list__item input + label::before {

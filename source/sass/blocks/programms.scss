@@ -142,15 +142,17 @@
 
 @media (min-width: $tablet-width) {
   .programms__article {
+    margin-top: 0;
+    margin-bottom: 30px;
     width: 708px;
-    padding-top: 81px;
-    padding-bottom: 62px;
+    padding-top: 76px;
+    padding-bottom: 61px;
     padding-left: 52px;
   }
 
   .programms__title {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     padding-left: 0;
 
     font-size: 36px;
@@ -161,23 +163,24 @@
     text-transform: uppercase;
 
     &::before {
-      top: 10px;
-      left: 390px;
+      top: 15px;
+      left: 394px;
 
       width: 200px;
       height: 200px;
     }
 
     &--slim::after {
-      left: 420px;
+      top: 4px;
+      left: 424px;
 
       width: 141px;
       height: 194px;
     }
 
     &--pro::after {
-      top: 65px;
-      left: 358px;
+      top: 58px;
+      left: 359px;
 
       width: 268px;
       height: 113px;
@@ -187,7 +190,7 @@
   .programms__paragraph {
     width: 373px;
     margin: 0;
-    margin-bottom: 61px;
+    margin-bottom: 57px;
     padding: 0;
 
     font-size: 16px;
@@ -204,10 +207,12 @@
   .programms__button {
     &::after {
       top: 4px;
-      left: 124px;
+      left: 128px;
     }
   }
 }
+
+// DESKTOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 @media (min-width: $desktop-width) {
   .programms__container {
@@ -219,6 +224,7 @@
     width: 570px;
     margin: 0;
     margin-bottom: 79px;
+    padding-top: 74px;
 
     &--slim {
       margin-right: 80px;
@@ -228,10 +234,10 @@
   .programms__title {
     margin: 0;
     margin-bottom: 75px;
-    padding-left: 165px;
+    padding-left: 162px;
 
     &::before {
-      top: -25px;
+      top: -28px;
       left: 0;
 
       width: 100px;
@@ -239,7 +245,7 @@
     }
 
     &--slim::after {
-      top: -28px;
+      top: -34px;
       left: 13px;
 
       width: 71px;
@@ -247,7 +253,7 @@
     }
 
     &--pro::after {
-      top: -1px;
+      top: -6px;
       left: -18px;
 
       width: 134px;
@@ -257,10 +263,10 @@
 
   .programms__paragraph {
     width: 462px;
-    margin-bottom: 61px;
+    margin-bottom: 31px;
 
     &--pro {
-      width: 444px;
+      width: 445px;
     }
   }
 }

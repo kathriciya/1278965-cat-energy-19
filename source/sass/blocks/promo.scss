@@ -43,7 +43,9 @@
 
   .promo__title {
     width: 414px;
-    margin-left: 91px;
+    margin-top: 43px;
+    margin-bottom: 41px;
+    margin-left: 86px;
 
     font-size: 60px;
     line-height: 60px;
@@ -53,6 +55,7 @@
   }
 
   .promo__paragraph {
+    margin-bottom: 20px;
     margin-left: 89px;
 
     font-size: 20px;
@@ -74,10 +77,43 @@
 
   .promo__button {
     position: absolute;
-    top: 250px;
+    top: 229px;
     left: 119px;
     z-index: 5;
 
     color: $color-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    margin-top: 94px;
+    margin-left: 81px;
+  }
+
+  .promo__paragraph {
+    margin-bottom: 53px;
+    margin-left: 80px;
+  }
+
+  .promo__container {
+    position: relative;
+    min-height: 555px;
+  }
+
+  .promo__img {
+    position: absolute;
+    top: -80px;
+    right: 257px;
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 234px;
+    left: 120px;
+    padding-right: 27px;
+    padding-left: 27px;
   }
 }
