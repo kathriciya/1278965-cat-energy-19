@@ -100,15 +100,15 @@
 
 @media (min-width: $desktop-width) {
   .additionally-list {
-    justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 59px;
   }
 
   .additionally-list__item {
+    width: 220px;
     margin: 0;
 
-    &:not(:nth-child(2n)) {
-      margin-right: 0;
+    &:not(:nth-child(4n)) {
+      margin-right: 105px;
     }
   }
 }

@@ -70,6 +70,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .choice-of-programme__title {
+    margin-top: 60px;
+  }
+
   .choice-of-programme__paragraph {
     margin-left: 0;
   }
