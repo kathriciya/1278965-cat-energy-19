@@ -371,15 +371,15 @@
       border-radius: 50%;
     }
   }
-}
 
-.example__button:hover {
-  box-shadow: 0 3px 5px 0 $color-shadow-hvr;
-}
+  .example__button:hover {
+    box-shadow: 0 3px 5px 0 $color-shadow-hvr;
+  }
 
-.example__button:active {
-  border: 2px solid $color-green;
-  box-shadow: 0 4px 5px 0 $color-shadow-down;
+  .example__button:active {
+    border: 2px solid $color-green;
+    box-shadow: 0 4px 5px 0 $color-shadow-down;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -392,30 +392,21 @@
     position: relative;
     z-index: 1;
 
-    &::before,
-    &::after {
+    &::before {
       content: " ";
       position: absolute;
       z-index: -1;
       bottom: 0;
-
-      height: 462px;
-    }
-
-    &::before {
       left: 0;
       width: 100vw;
-      max-width: 72.5%;
+      // width: 72.5%;
+      height: 462px;
 
       background-color: $color-grey-light;
     }
 
     &::after {
-      right: 0;
-      width: 100vw;
-      max-width: 27.5%;
-
-      background-color: $color-pro;
+      @include no-outline;
     }
   }
 
@@ -467,10 +458,13 @@
   }
 
   .example__title {
-    @include no-outline;
     margin-top: 0;
     margin-bottom: 147px;
     padding-top: 16px;
+
+    &::before {
+      @include no-outline;
+    }
   }
 
   .example__result {
@@ -507,58 +501,19 @@
     background-color: $color-grey-light;
   }
 
-  // .example {
-  //   position: relative;
-  //   z-index: 1;
+  .example__slider {
+    position: relative;
 
-  //   &::before {
-  //     content: " ";
-  //     position: absolute;
-  //     z-index: -1;
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 100vw;
-  //     height: 462px;
-  //     // width: 72.5%;
-  //     background-color: $color-grey-light;
-  //   }
-  // }
-
-  // .example__slider {
-  //   // width: 50%;
-  //   // z-index: 2;
-
-  //   &::before {
-  //     content: " ";
-  //     position: fixed;
-  //     top: 10px;
-  //     right: 0;
-  //     width: 100vw;
-  //     height: 462px;
-  //     background-color: red;
-  //   }
-  // // }
-
-  // .example__box {
-  //   margin-right: 0;
-  //   margin-bottom: 0;
-  //   width: 430px;
-
-  //   &--cat {
-  //     position: relative;
-  //     width: 630px;
-  //     margin-right: -30px;
-
-  //     &::before {
-  //       content: " ";
-  //       position: fixed;
-  //       left: 2px;
-  //       right: 0;
-  //       width: 100vw;
-  //       max-width: 30%;
-  //       height: 462px;
-  //       background-color: blue;
-  //     }
-  //   }
-  // }
+    &::before {
+      content: " ";
+      position: absolute;
+      z-index: -1;
+      left: 314px;
+      top: 150px;
+      right: 0;
+      width: 100vw;
+      height: 462px;
+      background-color: $color-pro;
+    }
+  }
 }

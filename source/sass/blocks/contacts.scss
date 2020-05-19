@@ -72,37 +72,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .contacts__container {
-  //   padding: 0;
-  //   // width: 214px;
-  //   // min-height: 76px;
-  //   // padding-top: 69px;
-  //   // padding-right: 90px;
-  //   // padding-bottom: 62px;
-  //   // padding-left: 76px;
+  .contacts__container {
+    padding-top: 64px;
+    padding-right: 88px;
+    padding-left: 76px;
 
-  //   &--no-index {
-  //     background-color: $color-white;
-  //   }
-  // }
+    &--no-index {
+      background-color: $color-white;
+    }
+  }
 
-  // .contacts__invitation {
-  //   width: 154px;
-  //   padding-top: 69px;
-  //   padding-bottom: 62px;
-  //   padding-left: 76px;
-  // }
-
-  // .contacts__address {
-  //   width: 155px;
-  //   padding-top: 66px;
-  //   padding-bottom: 59px;
-  //   padding-right: 90px;
-  //   text-align: left;
-  // }
-
-  // .contacts__address span {
-  //   display: block;
-  //   padding-top: 19px;
-  // }
+  .contacts__address {
+    text-align: left;
+  }
 }

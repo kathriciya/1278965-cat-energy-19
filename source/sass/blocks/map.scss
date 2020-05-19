@@ -8,8 +8,7 @@
     content: " ";
     position: absolute;
     z-index: 2;
-    left: auto;
-    right: auto;
+    left: calc(50% - 55px / 2);
     top: 138px;
 
     width: 55px;
@@ -42,8 +41,7 @@
 @media (min-width: $tablet-width) {
   .map {
     &::after {
-      left: auto;
-      right: auto;
+      left: calc(50% - 113px / 2);
       top: 146px;
 
       width: 113px;
@@ -64,8 +62,8 @@
 @media (min-width: $desktop-width) {
   .map {
     &::after {
-      right: calc(50% - 795px / 2);
-      bottom: 0;
+      left: calc(50% - -566px / 2);
+      top: 150px;
     }
 
     iframe {
