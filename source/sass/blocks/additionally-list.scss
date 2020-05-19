@@ -59,6 +59,7 @@
   .additionally-list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 41px;
   }
 
   .additionally-list__item {
@@ -100,6 +101,7 @@
 
 @media (min-width: $desktop-width) {
   .additionally-list {
+    margin-left: 0;
     margin-bottom: 59px;
   }
 
