@@ -75,6 +75,7 @@
 
 .form__input {
   box-sizing: border-box;
+  overflow: hidden;
   width: 100%;
   height: 45px;
   padding-top: 15px;
@@ -123,10 +124,12 @@
 
 .form__input::placeholder {
   color: $color-grey-dark;
+  opacity: 1;
 }
 
 .form__item textarea {
   box-sizing: border-box;
+  overflow: hidden;
   width: 100%;
   height: 150px;
   padding-top: 13px;
@@ -248,7 +251,7 @@
     }
 
     &--line-contact {
-      width: 594px;
+      width: 595px;
       padding-left: 42px;
       padding-right: 40px;
       margin-bottom: 79px;

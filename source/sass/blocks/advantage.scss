@@ -12,7 +12,6 @@
   @include no-list;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   width: 100%;
 }
 
@@ -123,8 +122,6 @@
     }
   }
 }
-
-// Desktop!!!!!!!!!
 
 @media (min-width: $desktop-width) {
   .advantage__title {

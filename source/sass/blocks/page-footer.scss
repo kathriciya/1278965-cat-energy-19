@@ -6,7 +6,6 @@
 .page-footer__top {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 
   &--no-index {
     background-color: $color-grey-light;
@@ -31,7 +30,6 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  // width: 100%;
 
   background-color: $color-grey-light;
 }
