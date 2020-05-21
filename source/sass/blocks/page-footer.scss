@@ -18,6 +18,9 @@
 
 .page-footer__map {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
   background-color: $color-grey-light;
 }
@@ -92,9 +95,7 @@
   }
 
   .page-footer__map {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
 
     background-color: $color-grey-light;
   }

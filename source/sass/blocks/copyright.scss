@@ -6,7 +6,7 @@
 }
 
 .copyright__text {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
@@ -49,5 +49,16 @@
       fill: $color-green;
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-top: 5px;
+  }
+
+  .copyright__icon {
+    top: -9px;
+    right: -6px;
   }
 }

@@ -19,40 +19,53 @@
   padding-left: 45px;
 }
 
-.additionally-list__item input + label::before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: calc(50% - (30px / 2));
+.additionally-list__item input + label {
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: calc(50% - (30px / 2));
 
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  border: 1px solid $color-grey-hvr;
-  cursor: pointer;
+    border: 1px solid $color-grey-hvr;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 6px;
+    top: calc(50% - (20px / 2));
+
+    width: 20px;
+    height: 10px;
+
+    border-top: 2px solid $color-green;
+    border-right: 2px solid $color-green;
+    transform: rotate(135deg);
+    opacity: 0;
+  }
 }
 
-.additionally-list__item input + label::after {
-  content: " ";
-  position: absolute;
-  left: 6px;
-  top: calc(50% - (20px / 2));
-
-  width: 20px;
-  height: 10px;
-
-  border-top: 2px solid $color-green;
-  border-right: 2px solid $color-green;
-  transform: rotate(135deg);
-  opacity: 0;
+.additionally-list__item input:checked + label {
+  &::after {
+    opacity: 1;
+  }
 }
 
-.additionally-list__item input:checked + label::after {
-  opacity: 1;
+.additionally-list__item input:disabled + label {
+  &::before {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
-.additionally-list__item input:disabled + label::before {
-  cursor: not-allowed;
+.additionally-list__item input:hover + label {
+  &::before {
+    border-color: $color-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -79,23 +92,21 @@
     padding-left: 57px;
   }
 
-  .additionally-list__item input + label::before {
-    top: calc(50% - (40px / 2));
+  .additionally-list__item input + label {
+    &::before {
+      top: calc(50% - (40px / 2));
 
-    width: 40px;
-    height: 40px;
-  }
+      width: 40px;
+      height: 40px;
+    }
 
-  .additionally-list__item:hover input + label::before {
-    border-color: $color-grey;
-  }
+    &::after {
+      left: 6px;
+      top: calc(50% - (25px / 2));
 
-  .additionally-list__item input + label::after {
-    left: 6px;
-    top: calc(50% - (25px / 2));
-
-    width: 25px;
-    height: 15px;
+      width: 25px;
+      height: 15px;
+    }
   }
 }
 
@@ -114,4 +125,3 @@
     }
   }
 }
-

@@ -67,10 +67,10 @@
   &--contact {
     margin-right: 17px;
   }
-}
 
-.form__label sup {
-  position: absolute;
+  sup {
+    position: absolute;
+  }
 }
 
 .form__input {
@@ -187,11 +187,6 @@
     width: 167px;
     margin-bottom: 27px;
   }
-}
-
-.form__button {
-  display: flex;
-  width: 280px;
 }
 
 .form__icon {
@@ -348,15 +343,6 @@
     width: 630px;
   }
 
-  .form__send {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 61px;
-    width: 630px;
-    min-height: 52px;
-  }
-
   .form__item textarea {
     margin-left: 40px;
     width: 630px;
@@ -369,12 +355,6 @@
 
   .form__icon {
     right: 15px;
-  }
-
-  .form__button {
-    margin-left: 41px;
-    margin-right: 72px;
-    width: 283px;
   }
 }
 
@@ -438,21 +418,6 @@
     margin-bottom: 44px;
   }
 
-  .form__button {
-    width: 568px;
-    margin-left: 0;
-    margin-right: 94px;
-  }
-
-  .form__send {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 71px;
-    width: 100%;
-    min-height: 52px;
-  }
-
   .form__label {
     margin-left: 1px;
     margin-right: 26px;
@@ -460,11 +425,11 @@
     &--age {
       margin-right: 17px;
     }
-  }
 
-  .form__label sup {
-    right: -8px;
-    font-weight: 500;
+    sup {
+      right: -8px;
+      font-weight: 500;
+    }
   }
 
   .form__input {
